@@ -20,7 +20,7 @@ class SyncEventHandler(FileSystemEventHandler):
     def on_deleted(self, event):
         if not event.is_directory:
             print(f"Archivo eliminado: {event.src_path}")
-            # Opcional: Implementar lógica para informar al dispositivo remoto
+            # Implementar aqui logica para informar al dispositivo remoto ;)
 
 class SyncService:
     def init(self, folder, bluetooth_service):
